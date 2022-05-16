@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFF0C9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+body { 
+    background-color: #ebd2c2;
+    font-family: montserrat;
+}
+
+footer {
+    background-color: #FFF0C9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* HEADER */
+.flexHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.logoResponsive{
+    display: none;
+}
+
+.openHeader {
+    color: darkgreen;
+    width: 50px;
+    display: none;
+
+}
+
+.cruz {
+    display: none;
+}
+
+
+.navegacion {
+    width: 410px;
+    margin: 0px;
+    background-color: #efefef;
+}
+
+.navegacion ul {
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: burlywood;
+}
+
+.menu li a:hover {
+    color: darkolivegreen;
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background-color: darkslategrey;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1000;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #efefef;   
+    
+}
+
+.menu li:hover .submenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+/*HEADER */
+
+
+/* MAIN INDEX */
+.flexMain {
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(149,213,160);
+    background: radial-gradient(circle, rgba(149,213,160,1) 0%, rgba(39,102,82,1) 100%);
+}
+
+.animacion{
+    animation-name: caiguaefecto;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes caiguaefecto{
+    0%{
+        transform: scale(0.3); 
+    }
+
+    from {
+        opacity: 0.5;
+    }
+
+    to{
+        opacity: 0;
+    } 
+}
+
+.titulo {
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.flexFlechaMain {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.gridContainer3 {
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.gridContainer3 img {
+    
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tarjetas a {
+    text-align: center;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    text-decoration: none;
+    color: #95d5a5;;
+}
+
+.parrafito {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px; 
+    background-color: #276652;
+    color: #95d5a5;
+}
+.lagenaria {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    padding: 30px;
+    background-color: #332d29;
+    color: #dcb37b;
+} 
+/*MAIN INDEX */
+
+/* PRODUCTOS/PEZ/BIRD */
+.pajarito {
+    display: flex;
+    justify-content: center;
+}
+.pez {
+    display: flex;
+    justify-content: center;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gridContainerProductos{  
+    display: grid;
+    grid-template-columns: repeat(4, 390px);
+    grid-template-rows: repeat(2, 750px);
+    justify-content: space-around;  
+
+}
+
+.gridContainerProductos2 {
+    display: grid;
+    grid-template-columns: repeat(4, 390px);
+    grid-template-rows: repeat(3, 750px);
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 350px;
+    height: 650px;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%); 
+    background-color: #276652;
+    color: #95d5a5;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card h4 {
+    padding: 10px;
+}
+/* PRODUCTOS/PEZ/BIRD */
+
+
+/* DONDE ENCONTRARNOS */
+.contact {
+    text-align: center;
+    
+}
+
+.contacto {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+}
+/*DONDE ECNONTRARNOS */
+
+
+/* FOOTER */
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyr {
+    display: none;
+}
+
+.copyd {
+    display: block;
+}
+/* FOOTER */
+
+@media screen and (max-width: 1024px) {
+
+    
+    
+    .gridContainerProductos{  
+        display: grid;
+        grid-template-columns: 390px 390px;
+        grid-template-rows: repeat(3, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .gridContainerProductos2{  
+        display: grid;
+        grid-template-columns: 390px 390px;
+        grid-template-rows: repeat(6, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 838px){
+    
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .flexMain {
+        width: auto;
+        height: 150px;
+    }
+
+
+    .pajarito {
+        display: flex;
+        justify-content: center;
+        font-size:x-large;
+    }
+
+    .pez {
+        display: flex;
+        justify-content: center;
+        font-size:x-large;
+    }
+    
+    .gridContainerProductos{  
+        display: grid;
+        grid-template-columns: 390px;
+        grid-template-rows: repeat(6, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .gridContainerProductos2{  
+        display: grid;
+        grid-template-columns: 390px;
+        grid-template-rows: repeat(12, 750px);
+        margin-left: 40px;
+        justify-content: space-around;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+
+    .openHeader {
+        display: block;
+        text-decoration: none;
+    }
+
+    .cruz {
+        display: block;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    #sidebar {
+        background-color: gray;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100vh;
+        width: 80%;
+        max-width: 300px;
+
+
+        transform:translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+     #sidebar menu {
+         height: 100%;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-start;
+    }
+
+    #sidebar:target {
+        transform: translate(0);
+    }
+
+    .logoCaigua2{
+        display: none;
+    }
+
+    .logoCaigua {
+        display: none;
+    }
+
+    .logoResponsive{
+        display: block;
+    }
+
+    .copyr {
+        display: block;
+        font-size:large;
+    }
+
+    .copyd {
+        display: none;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 470px; 
+    }
+
+    .parrafito {
+        text-align: center;
+        width: 350px;
+        height: 450px;
+        box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+        padding: 30px; 
+        background-color: #276652;
+        color: #95d5a5;
+    }
+    .lagenaria {
+        text-align: center;
+        width: 350px;
+        height: 550px;
+        box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+        padding: 30px;
+        background-color: #332d29;
+        color: #dcb37b;
+    } 
+
+    .gridContainer3 img {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 250px; 
+    }
+}
+
+@media screen and (max-width: 516px){
+    .gridContainer3 img {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 200px; 
+    }
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 416px){
+    .gridContainer3 img {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 180px; 
+    }
+
+    .flexRedes{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .copyr {
+        display: block;
+        font-size:medium;
+    }
+
+}
